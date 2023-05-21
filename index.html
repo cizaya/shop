@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<a href="menu.html"><img class="tre" src="tre.png" alt="картинка" onclick="memu_open()"></a>
+<img class="logo" src="logo s.png" alt="картинка">
+<img class="home" src="home.png" alt="картинка">
+<a href="page7.html"><img class="korsina" src="korsina.png" alt="картинка"></a>
+<a href="page8.html"><img class="akkaynt" src="akkaynt.png" alt="картинка"></a>
+<p class="nomber">+375253635273</p>
+<p class="nomber2">+375446560498</p>
+</header>
+<main>
+<div class="main"></div>
+<img class="ss1" src="ss1.png" alt="картинка">
+<a href="page2.html"><img class="women" src="women.png" alt="картинка"></a>
+<a href="page3.html"><img class="men" src="men.png" alt="картинка"></a>
+<a href="page4.html"><img class="sales" src="sales.png" alt="картинка"></a>
+<a href="page5.html"><img class="children" src="children.png" alt="картинка"></a>
+<a href="page6.html"><img class="family" src="family look.png" alt="картинка"></a>
+<img class="pin1" src="pin1.png" alt="картинка">
+<p class="dress">скидки на платья до
+<br> 50%</p>
+<img class="pin2" src="pin2.png" alt="картинка">
+<p class="rybash">скидки на рубашки до
+<br>30%</p>
+<img class="pin3" src="pin3.png" alt="картинка">
+<p class="otmn">скидки на весенние вещи до
+<br> 60%</p>
+<img class="pin4" src="pin4.png" alt="картинка">
+<p class="blas">скидки на блузки до
+ <br> 50%</p>
+<img class="pin5" src="pin5.png" alt="картинка">
+<p class="svit">скидки на свитера до
+ <br> 60%</p>
+<p class="our">наши капсулы</p>
+<div class="container">
+<img  src="look1.png" alt="картинка" onclick="open_pic(1)">
+<img  src="look2.png" alt="картинка" onclick="open_pic(2)">
+<img  id="look3" src="look3.png" alt="картинка" onclick="open_pic(3)">
+<img  src="look4.png" alt="картинка" onclick="open_pic(4)">
+<img  src="look5.png" alt="картинка" onclick="open_pic(5)">
+<img  src="look6.png" alt="картинка" onclick="open_pic(6)">
+<img  src="look7.png" alt="картинка" onclick="open_pic(7)">
+<img  src="look8.png" alt="картинка" onclick="open_pic(8)">
+<img  src="look9.png" alt="картинка" onclick="open_pic(9)">
+</main>
+<footer class="footer">
+
+<img class="insta" src="insta.png" alt="картинка">
+<p class="ins">@kjkgj_fashion</p>
+<img class="tele" src="telega.png" alt="картинка">
+<p class="tel">kjkjfashion</p>
+<p class="shop1">магазин одежды</p>
+<p class="abc">+375253635273</p>
+<p class="abc1">+375446560498</p>
+</footer>
+<dialog id="picture"><img src="" id="pic"> <button onclick="close_dialog()">x</button></dialog>
+<dialog id="menu">ghjk</dialog>
+<script>
+    dialog=document.getElementById("picture");
+    dialog_menu=document.getElementById("menu");
+    pic=document.getElementById("pic");
+    function open_pic(num){
+        dialog.showModal();
+        if (num==1){ pic.src="look1.png"}
+        if (num==2){ pic.src="look2_2.png"}
+        if (num==3){ pic.src="look3_3.png"}
+        if (num==4){ pic.src="look4_4.png"}
+        if (num==5){ pic.src="look5_5.png"}
+        if (num==6){ pic.src="look6.png"}
+        if (num==7){ pic.src="look7_7.png"}
+        if (num==8){ pic.src="look8.png"}
+        if (num==9){ pic.src="look9.png"}
+    }
+    function close_dialog(){
+        dialog.close()
+    }
+    function menu_open(){
+        console.log("ghjk")
+        dialog_menu.showModal();  
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="header"></div>
+<img class="logo" src="logo s.png" alt="картинка">
+<img class="home" src="home.png" alt="картинка">
+<img class="korsina" src="korsina.png" alt="картинка">
+<img class="akkaynt" src="akkaynt.png" alt="картинка">
+<p class="nomber">+375253635273</p>
+<p class="nomber2">+375446560498</p>
+</header>
+<footer>
+    <div class="footer"></div>
+    <img class="insta" src="insta.png" alt="картинка">
+    <p class="ins">@kjkgj_fashion</p>
+    <img class="tele" src="telega.png" alt="картинка">
+    <p class="tel">kjkjfashion</p>
+    <p class="shop1">магазин одежды</p>
+    <p class="abc">+375253635273</p>
+    <p class="abc1">+375446560498</p>
+    </footer>
+    <dialog id="picture"><img src="" id="pic"> <button onclick="close_dialog()">x</button></dialog>
+    <script>
+        dialog=document.getElementById("picture");
+        pic=document.getElementById("pic");
+        function open_pic(num){
+            dialog.showModal();
+            if (num==1){ pic.src="look1.png"}
+            if (num==2){ pic.src="look2.png"}
+            if (num==3){ pic.src="look3.png"}
+            if (num==4){ pic.src="look4.png"}
+            if (num==5){ pic.src="look5.png"}
+            if (num==6){ pic.src="look6.png"}
+            if (num==7){ pic.src="look7.png"}
+            if (num==8){ pic.src="look8.png"}
+            if (num==9){ pic.src="look9.png"}
+        }
+        function close_dialog(){
+            dialog.close()
+        }
+    </script>
+    </body>
+    </html>
